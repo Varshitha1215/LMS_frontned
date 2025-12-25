@@ -1,0 +1,44 @@
+.coding-textarea {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 16px;
+  border: none;
+  outline: none;
+  resize: none;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+  transition: background-color 0.2s ease;
+}
+
+.code-editor-textarea {
+  font-family: 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+  font-size: 14px;
+  line-height: 1.6;
+  padding: 16px;
+  border: none;
+  outline: none;
+  resize: none;
+  flex: 1;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.accent-text {
+  font-weight: 600;
+}
+
+/* Dark theme overrides */
+:root[data-theme="dark"] .coding-textarea,
+:root[data-theme="dark"] .code-editor-textarea {
+  color: #e0e0e0;
+  background-color: #1e1e1e;
+}
+
+/* Light theme overrides */
+:root[data-theme="light"] .coding-textarea,
+:root[data-theme="light"] .code-editor-textarea {
+  color: #333;
+  background-color: #f5f5f5;
+}
